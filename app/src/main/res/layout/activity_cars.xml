@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/bg"
+
+    tools:context=".cars">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:transitionName="l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inlinebox"
+        app:layout_constraintVertical_bias="0.208">
+
+        <TextView
+            android:id="@+id/subhed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/neuro"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="4"
+            android:text="Driverless Technology"
+            android:textColor="#FFFFFF"
+
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="A self-driving car is a model that can drive itself in most, if not all, situations. This is also known as an autonomous or driverless car. These cars combine radar sensors, complex algorithms and machine learning systems to safely operate and navigate the vehicle. "
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/subhed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/neuro"
+            android:shadowColor="#FFFFFF"
+
+            android:shadowRadius="4"
+            android:text="Augmented Reality"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/poppins"
+
+            android:text="Augmented reality (AR) cars essentially use a computer within the dashboard to give drivers supplementary information on their surroundings in real time. The information displays directions, the speedometer and more, right in front of your eyes."
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inlinebox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/custom_input2"
+        android:elevation="100dp"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/two"
+        android:outlineSpotShadowColor="@color/two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:backgroundTint="@color/bg"
+            android:transitionName="c1"
+            app:cardBackgroundColor="@color/bg"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+
+                app:srcCompat="@drawable/car" />
+
+            <LinearLayout
+                android:id="@+id/textbox"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/lin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/neuro"
+                    android:text="Futurastic Car"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:transitionName="nameTransition" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/inlinebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/ic_round_arrow_back_ios_24" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/inlinebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/ic_round_checklist_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
